@@ -4,6 +4,7 @@
 
 <header 
   style="display: flex;
+  width: 100%;
   justify-content: center;
   height: 20rem;
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);">
