@@ -140,7 +140,8 @@ main {
   color: #757575;
 }
 
-.main-currency-table {
+.main-currency-table-Monedas,
+.main-currency-table-Comisiones {
   width: 70%;
   min-width: 23rem;
   max-width: 50rem;
@@ -149,12 +150,20 @@ main {
   font-family: "Inter", sans-serif;
 }
 
-.main-currency-table .currency-table--title {
+.main-currency-table-Monedas .currency-table--title,
+.main-currency-table-Comisiones .currency-table--title {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
+}
+
+.main-currency-table-Monedas .currency-table--title {
   color: var(--bitcoin-orange);
+}
+
+.main-currency-table-Comisiones .currency-table--title {
+  color: var(--secondary-blue);
 }
 
 .currency-table--container {
@@ -169,6 +178,8 @@ main {
   width: 100%;
   height: 100%;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 8px var(--bitcoin-orange);
+  border-radius: 2rem;
 }
 
 .currency-table--container td {
@@ -220,4 +231,129 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.currency-table--container .currency-table--dateOrange {
+  font-size: 1.2rem;
+  width: 90%;
+  background-color: var(--soft-orange);
+  height: 3rem;
+  color: var(--warm-black);
+  padding: 0.8rem;
+  border-radius: 0.9rem;
+  margin: 0 auto;
+}
+
+.currency-table--container .currency-table--dateBlue {
+  width: 90%;
+  padding: 0.8rem;
+  color: var(--warm-black);
+  font-size: 1.2rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: var(--soft-blue);
+  border-radius: 0.9rem;
+  margin: 0 auto;
+}
+
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px;
+  background-color: var(--warm-black);
+  justify-content: center;
+}
+
+.product-detail--patataLogo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -12px;
+  left: calc(50% - 30px);
+  background-image: url("./assets/imgs/papa.svg");
+}
+
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-whte);
+}
+
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card {
+  font-weight: bold;
+  width: 80%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 8px;
+  /* box-shadow: -3px 5px 5px var(--soft-blue); */
+  box-shadow: -3px 5px 5px #f7931ad4;
+}
+
+.product-detail--card:hover {
+  box-shadow: -3px 5px 5px #f7931ad4;
+}
+
+.product-detail--card span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card .clock {
+  background-image: url("./assets/icons/clock.svg");
+}
+
+.product-detail--card .eye {
+  background-image: url("./assets/icons/eye.svg");
+}
+
+.product-detail--card .money {
+  background-image: url("./assets/icons/dollar.svg");
+}
+
+.product-detail--card .tick {
+  background-image: url("./assets/icons/check-circle.svg");
+}
+
+.product-detail--card .product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: var(--just-whte);
+}
+
+.product-detail--card .product--card-body {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #808080;
 }
