@@ -582,5 +582,6 @@ footer .left ul {
 .left a {
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.4rem;
   color: var(--just-whte);
 }
