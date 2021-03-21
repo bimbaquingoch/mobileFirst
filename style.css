@@ -140,13 +140,24 @@ main {
   color: #757575;
 }
 
+/* Scroll tarjetas precios*/
+.main-tables-container {
+  display: flex;
+  height: 400px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main-currency-table-Monedas,
 .main-currency-table-Comisiones {
+  scroll-snap-align: center;
   width: 70%;
   min-width: 23rem;
   max-width: 50rem;
   height: 36rem;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 45px;
   font-family: "Inter", sans-serif;
 }
 
@@ -380,7 +391,7 @@ main {
 .main-plans-container {
   width: 100%;
   min-width: 320px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -414,14 +425,30 @@ main {
   color: #757575;
 }
 
+/* Scroll pagos*/
+
+.plans-container--slider {
+  display: flex;
+  /*Esto es una nueva implementacion futura 
+   de css*/
+  /* gap: 20px; */
+  height: 310px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .plans-container--slider article {
   position: relative;
+  /* ayuda a centrar el item en la pantalla*/
+  scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 200px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
-  padding: 0 25px;
+  margin-top: 20px;
+  margin-right: 15px;
   border-radius: 15px;
 }
 
@@ -448,7 +475,8 @@ main {
   height: 31px;
   left: calc(50% - 60px);
   top: -15px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   padding: 6px;
   border-radius: 8px;
   color: var(--just-whte);
@@ -523,4 +551,34 @@ main {
   margin: 0 10px;
   background-image: url("./assets/icons/orangeArrow.svg");
   vertical-align: text-bottom;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--just-whte);
 }
